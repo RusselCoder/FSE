@@ -164,7 +164,7 @@ nav a{
     display: block;
   }
   
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     label {
       font-size: 0;
     }
@@ -177,15 +177,20 @@ nav a{
 
        .pbox p{
       font-size: 12px;
+           color:blue;
     }
 
     
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     label {
       padding: 15px;    
     }
-
+      
+     .pbox p{
+      font-size: 12px;
+           color:red;
+    }
    
   }
   
