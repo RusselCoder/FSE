@@ -1,0 +1,245 @@
+/* https://devsnap.me/css-tabs */
+/* https://alvarotrigo.com/blog/html-css-tabs/ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    font: 14px/1 'Open Sans', sans-serif;
+    color: #555;
+    background: #eee;
+}
+
+/* GLOBAL */
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+/* HEADER */
+header{
+    background-color: #16537E; 
+    margin-bottom: .3rem;
+    top:0;
+    position: sticky;
+}
+
+h1{
+  color: white;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.header img{
+    height:75px;
+    width:auto;
+    padding-right:1rem;
+    justify-content: space-between;
+}
+
+nav{   
+    background:black;   
+    
+}
+
+nav ul{
+    height:30px;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    
+}
+
+nav li{
+    list-style: none;
+  
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+}
+
+/* TABLINK DESIGN AREA */
+  
+  h2 {
+    padding: 30px 0;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  
+  
+  main {
+    min-width: 320px;
+    max-width: 800px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background: #fff;
+  }
+  
+  section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+  }
+  
+  label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  
+  label[for*='1']:before {
+    content: '\f17a';
+  }
+  
+  label[for*='2']:before {
+    content: '\f0a0';
+  }
+  
+  label[for*='3']:before {
+    content: '\f013';
+  }
+  
+  label[for*='4']:before {
+    content: '\f084';
+  }
+  
+  label[for*='5']:before {
+      content: '\f0c5';
+    }
+  
+  label:hover {
+    color: #888;
+    cursor: pointer;
+  }
+  
+  input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
+  }
+  
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4,
+  #tab5:checked ~ #content5 {
+    display: block;
+  }
+  
+  @media screen and (max-width: 650px) {
+    label {
+      font-size: 0;
+    }
+
+  
+    label:before {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    
+  }
+  @media screen and (max-width: 400px) {
+    label {
+      padding: 15px;    
+    }
+
+    .pbox p{
+      font-size: 12px;
+    }
+  }
+  
+  
+  .pbox{
+      height:30px;
+      border: 1px solid #ddd;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin:.5rem .5rem;
+      padding-left:.5rem;
+      padding-right: .5rem;
+  }
+
+  button{
+    transition: 0.3s;
+  }
+  .pbox button:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    
+  }
+  
+  .pbox a{
+    text-decoration: none;
+    color:black;
+  }
+
+    footer p{
+        height: 30px;
+        width: 100%;
+        bottom: 0;
+        background-color: #555;
+        color: #ddd;
+        position: fixed; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+.search{
+   height: 30px;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.search input[type=text] {
+    padding: .2rem;
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+
+/* LOGIN DESIGN */
