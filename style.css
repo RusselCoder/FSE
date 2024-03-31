@@ -182,7 +182,7 @@ nav a{
 
     
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 400px) {
     label {
       padding: 15px;    
     }
@@ -206,16 +206,16 @@ nav a{
       padding-right: .5rem;
   }
 
-  button{
-    transition: 0.3s;
+ button{
+    transition: 0.1s ease-in-out;
   }
   .pbox button:hover{
     background-color: lightskyblue;
     cursor: pointer;
     border: 1px solid #ddd;
+    padding: 1.5px;
     
   }
-  
   .pbox a{
     text-decoration: none;
     color:black;
